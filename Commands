@@ -1,0 +1,29 @@
+mkdir build
+cd build
+cmake ..
+make
+//
+//
+//
+//
+mkdir build
+cd build
+cmake -D RELEASE=ON ..
+make
+//
+//
+//
+//
+//
+Para criar o container, basta executar:
+
+cd boilerplate
+sudo docker build -t boilerplate .
+
+Para rodar os testes dentro do container, basta executar.
+
+sudo docker run boilerplate test
+
+Para rodar o programa dentro do container, basta executar:
+
+sudo docker run boilerplate

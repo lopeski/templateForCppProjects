@@ -1,0 +1,10 @@
+sudo: required
+
+language: cpp
+
+services:
+  - docker
+
+script:
+  - sudo docker build -t boilerplate .
+  - sudo docker run boilerplate test
